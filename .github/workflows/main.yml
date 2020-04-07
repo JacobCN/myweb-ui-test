@@ -37,11 +37,11 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
         # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-        ftp-server: ${{ALIYUN_FTP_HOST}}
+        ftp-server: ${{secrets.ALIYUN_FTP_HOST}}
         # FTP account username
-        ftp-username: ${{ALIYUN_FTP_USERNAME}}
+        ftp-username: ${{secrets.ALIYUN_FTP_USERNAME}}
         # FTP account password
-        ftp-password: ${{ALIYUN_FTP_PASSWORD}}
+        ftp-password: ${{secrets.ALIYUN_FTP_PASSWORD}}
         # The local folder to copy, defaults to root project folder
         local-dir: ./ # optional
         # Passes through options into git-ftp
