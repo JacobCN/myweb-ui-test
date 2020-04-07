@@ -43,6 +43,6 @@ jobs:
         # FTP account password
         ftp-password: ${{secrets.ALIYUN_FTP_PASSWORD}}
         # The local folder to copy, defaults to root project folder
-        local-dir: ./ # optional
+        local-dir: ./index.html # optional
         # Passes through options into git-ftp
         # git-ftp-args:  # optional
