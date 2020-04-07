@@ -37,7 +37,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
         # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-        ftp-server: ${{secrets.ALIYUN_FTP_HOST}}
+        ftp-server: ${{secrets.ALIYUN_FTP_HOST}}/htdocs
         # FTP account username
         ftp-username: ${{secrets.ALIYUN_FTP_USERNAME}}
         # FTP account password
